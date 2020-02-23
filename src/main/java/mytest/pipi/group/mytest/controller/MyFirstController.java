@@ -10,6 +10,7 @@ public class MyFirstController {
     @RequestMapping("/hello")
     public String myhello(@RequestParam(name = "name") String name, Model model) {
         model.addAttribute("name", name);
+        //////
         return "hello";
     }
 }
